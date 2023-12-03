@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings</title>
+  <link rel="stylesheet" href="settings_styles.css">
+  <style>
+    /* Inline styles for demonstration purposes */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="checkbox"] {
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 8px;
+      border-radius: 3px;
+      border: none;
+      background-color: #3498db;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Settings</h1>
+    <a href="dashboard.html">Back to Dashboard</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>Notification Settings</h2>
+      <form id="notificationSettingsForm">
+        <label>
+          <input type="checkbox" id="emailNotifications" checked>
+          Receive email notifications
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" id="pushNotifications">
+          Receive push notifications
+        </label>
+        <br>
+        <button type="submit">Save Changes</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Privacy Settings</h2>
+      <form id="privacySettingsForm">
+        <label>
+          <input type="checkbox" id="publicProfile">
+          Make profile public
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" id="hideActivity">
+          Hide recent activity
+        </label>
+        <br>
+        <button type="submit">Save Changes</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

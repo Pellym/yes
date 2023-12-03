@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logout</title>
+  <link rel="stylesheet" href="logout_styles.css">
+  <style>
+    /* Inline styles for demonstration purposes */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    main {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 8px;
+      border-radius: 3px;
+      border: none;
+      background-color: #3498db;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Logout</h1>
+  </header>
+
+  <main>
+    <p>Are you sure you want to logout?</p>
+    <button onclick="performLogout()">Logout</button>
+  </main>
+
+  <script>
+    function performLogout() {
+      // Perform logout actions here (e.g., clear session, redirect to login page)
+      // For demonstration, redirecting to the login page
+      window.location.href = 'login.html';
+    }
+  </script>
+
+</body>
+</html>
